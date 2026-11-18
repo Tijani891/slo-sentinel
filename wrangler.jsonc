@@ -1,0 +1,14 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "slo-sentinel",
+	"main": "src/entry.py",
+	"compatibility_date": "2026-11-14",
+	"compatibility_flags": ["python_workers"],
+	"observability": {
+		"enabled": true
+	}
+	// Coming later in the plan:
+	//   day 6  - d1_databases binding (DB) + migrations_dir
+	//   day 10 - triggers.crons for the prober
+	//   day 11 - env.staging with its own Worker name and D1 database
+}
